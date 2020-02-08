@@ -9,6 +9,7 @@
   "rules": {
     "quotes": [2, "single"],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "react/prefer-stateless-function": "off"
+    "react/prefer-stateless-function": "off",
+    "react/prop-types": 0
   }
 }
