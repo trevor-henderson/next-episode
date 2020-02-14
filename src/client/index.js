@@ -2,19 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import NavButton from './components/navigators/nav-button';
-import ToolBar from './components/navigators/tool-bar';
+import GeneralLayout from './components/layouts/general-layout';
 
 const tempButtons = [
   <NavButton textField="one" />,
   <NavButton textField="two" />,
-  <NavButton textField="three" />];
+  <NavButton textField="three" />,
+  <NavButton textField="four" />,
+  <NavButton textField="five" />];
 
 class App extends React.Component {
   render() {
     return (
-      <ToolBar>
+      <GeneralLayout>
         {tempButtons}
-      </ToolBar>
+      </GeneralLayout>
     );
   }
 }
