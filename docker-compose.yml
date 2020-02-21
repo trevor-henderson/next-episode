@@ -1,0 +1,6 @@
+version: '3'
+services:
+  next-episode:
+    build: .
+    ports:
+    - '8888:5000'
