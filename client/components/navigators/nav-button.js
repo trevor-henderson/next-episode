@@ -1,7 +1,7 @@
 import React from 'react';
 
 const NavButton = ({ textField }) => (
-  <button type="button">
+  <button data-testid="nav-button" type="button">
     {textField}
   </button>
 );
