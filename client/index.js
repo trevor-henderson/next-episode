@@ -2,22 +2,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import NavButton from './components/navigators/nav-button';
-import ToolBar from './components/navigators/tool-bar';
+import {Grid, Row, Col} from "./components/layouts/BasicLayout";
+import NavBar from "./components/layouts/NavBar";
+import CardList from './components/layouts/CardList';
 
-const tempButtons = [
-  <NavButton textField="one" />,
-  <NavButton textField="two" />,
-  <NavButton textField="three" />];
+const articles = [
+    {
+        title: 'foo',
+        description: 'bar'
+    },
+    {
+        title: 'foo1',
+        description: 'bar1'
+    },
+    {
+        title: 'foo2',
+        description: 'bar2'
+    }
+];
 
 class App extends React.Component {
-  render() {
-    return (
-      <ToolBar>
-        {tempButtons}
-      </ToolBar>
-    );
-  }
+    render() {
+        return (
+            <>
+            <NavBar></NavBar>
+            <CardList articleArray={articles}/>
+            </>
+        );
+    }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App/>, document.getElementById('app'));
