@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const NavBarWrapper = styled.div`
   display: flex;;
@@ -21,14 +21,12 @@ const NavBarItemWrapper = styled.a`
 `;
 
 
-const NavBar = () => {
-    return (
-        <NavBarWrapper>
-            <NavBarItemWrapper>Home</NavBarItemWrapper>
-            <NavBarItemWrapper>About</NavBarItemWrapper>
-            <NavBarItemWrapper>Settings</NavBarItemWrapper>
-        </NavBarWrapper>
-    );
-};
+const NavBar = () => (
+  <NavBarWrapper>
+    <NavBarItemWrapper>Home</NavBarItemWrapper>
+    <NavBarItemWrapper>About</NavBarItemWrapper>
+    <NavBarItemWrapper>Settings</NavBarItemWrapper>
+  </NavBarWrapper>
+);
 
 export default NavBar;

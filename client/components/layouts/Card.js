@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import Title from "./Title";
+import React from 'react';
+import styled from 'styled-components';
+import Title from './Title';
 
 const StyledCard = styled.div`
   display: flex;
@@ -23,13 +23,11 @@ const StyledDescription = styled.p`
   color: white;
 `;
 
-const Card = ({title, description}) => {
-    return (
-      <StyledCard>
-          <Title isMain={false} text={title}/>
-          <StyledDescription>{description}</StyledDescription>
-      </StyledCard>
-    );
-};
+const Card = ({ title, description }) => (
+  <StyledCard>
+    <Title isMain={false} text={title} />
+    <StyledDescription>{description}</StyledDescription>
+  </StyledCard>
+);
 
 export default Card;

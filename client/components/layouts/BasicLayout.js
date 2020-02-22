@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Grid =  styled.div`
+export const Grid = styled.div`
 
 `;
 
@@ -9,7 +9,7 @@ export const Row = styled.div`
 `;
 
 const media = {
-    xs: (styles) => `
+  xs: (styles) => `
       @media (max-width: 1000px) {
         ${styles}
       }
@@ -23,5 +23,3 @@ export const Col = styled.div`
     display: none;
   `)};
 `;
-
-
