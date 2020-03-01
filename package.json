@@ -11,7 +11,14 @@
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "."
+      "./client/**/*.js",
+      "!./node_modules/",
+      "!./dist/",
+      "!./pages/",
+      "!./server/",
+      "!./.github/",
+      "!./coverage/",
+      "!./webpack.config.js"
     ],
     "coverageReporters": [
       "json",
@@ -44,6 +51,7 @@
   "dependencies": {
     "@hapi/hapi": "^19.1.0",
     "@hapi/inert": "^6.0.1",
+    "@material-ui/core": "^4.9.4",
     "next": "^9.2.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",

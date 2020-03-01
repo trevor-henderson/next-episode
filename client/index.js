@@ -2,22 +2,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import NavButton from './components/navigators/nav-button';
-import ToolBar from './components/navigators/tool-bar';
 
-const tempButtons = [
-  <NavButton textField="one" />,
-  <NavButton textField="two" />,
-  <NavButton textField="three" />];
+import CssBaseline from '@material-ui/core/CssBaseline';
+import FrontPageLayout from './components/layouts/front-page-layout';
 
-class App extends React.Component {
-  render() {
-    return (
-      <ToolBar>
-        {tempButtons}
-      </ToolBar>
-    );
-  }
-}
+const App = () => (
+  <>
+    <CssBaseline />
+    <FrontPageLayout />
+  </>
+);
 
 ReactDOM.render(<App />, document.getElementById('app'));

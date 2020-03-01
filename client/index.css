@@ -1,0 +1,9 @@
+html,  body {    height: 100%;   }
+
+body {    display: flex; /*flex superpowers activated! */    flex-direction: column; /*Stack the flex-items (main and footer elements) vertically NOT horizontally*/  }
+
+#app {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
